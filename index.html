@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Akpomeda Daniel Otuko | Elite Cyber Warfare Interface</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<style>
+body{background:#040404;color:#00ff9c;font-family:'Fira Code',monospace;margin:0}
+.sidebar{position:fixed;left:0;top:0;width:240px;height:100%;background:#0b0b0b;padding:20px;border-right:1px solid #00ff9c}
+.sidebar img{width:110px;border-radius:100%;border:2px solid #00ff9c}
+.sidebar a{display:block;margin:10px 0;color:#00ff9c;text-decoration:none}
+.main{margin-left:260px;padding:30px}
+.card{background:#0b0b0b;padding:20px;margin-bottom:20px;border:1px solid #00ff9c33}
+#terminal{background:black;height:260px;overflow:auto;padding:10px}
+#cmd{width:100%;background:black;border:none;color:#00ff9c;font-family:monospace}
+#map{height:340px}
+#three{height:340px}
+.tool{border-bottom:1px solid #00ff9c22;padding:5px}
+.log{font-size:12px;border-bottom:1px solid #00ff9c22;padding:4px}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<img src="profile.jpg">
+
+<h3>Akpomeda Daniel Otuko</h3>
+<p>Cybersecurity Analyst<br>Linux Power User<br>Ethical Hacker</p>
+
+<a href="#terminalCard">Terminal</a>
+<a href="#mapCard">Attack Map</a>
+<a href="#socCard">3D SOC</a>
+<a href="#logsCard">SIEM Logs</a>
+<a href="#toolsCard">Tools</a>
+<a href="#blogCard">Blog</a>
+<a href="#aiCard">AI Assistant</a>
+
+</div>
+
+<div class="main">
+
+<div class="card">
+<h1>Elite Cyber Warfare Interface</h1>
+<p>Advanced cybersecurity operations dashboard.</p>
+</div>
+
+<div class="card" id="terminalCard">
+<h2>Kali Linux Terminal Emulator</h2>
+<div id="terminal"></div>
+<input id="cmd" placeholder="type command">
+</div>
+
+<div class="card" id="mapCard">
+<h2>Global Cyber Attack Map</h2>
+<div id="map"></div>
+</div>
+
+<div class="card" id="socCard">
+<h2>3D Threat Intelligence Visualization</h2>
+<div id="three"></div>
+</div>
+
+<div class="card" id="logsCard">
+<h2>SIEM Log Stream</h2>
+<div id="logs"></div>
+</div>
+
+<div class="card" id="toolsCard">
+<h2>3000+ Cybersecurity Tools</h2>
+<input id="search" placeholder="search tools" style="width:100%;background:black;color:#00ff9c;border:1px solid #00ff9c">
+<div id="toolList"></div>
+</div>
+
+<div class="card" id="blogCard">
+<h2>Cybersecurity Blog</h2>
+<div id="posts"></div>
+</div>
+
+<div class="card" id="aiCard">
+<h2>AI Cybersecurity Assistant</h2>
+<div id="chat"></div>
+<input id="aiInput" placeholder="ask cybersecurity question" style="width:100%;background:black;color:#00ff9c;border:none">
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

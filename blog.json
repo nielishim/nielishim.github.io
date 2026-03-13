@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Advanced Nmap Techniques",
+    "content": "Nmap can perform stealth scans, OS detection, and service enumeration."
+  },
+  {
+    "title": "Linux Hardening Guide",
+    "content": "Use firewall rules, disable unused services, and apply strict permissions."
+  },
+  {
+    "title": "Threat Hunting Basics",
+    "content": "Threat hunting involves proactively searching systems for hidden threats."
+  }
+]
